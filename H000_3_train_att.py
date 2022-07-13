@@ -65,16 +65,12 @@ def TrainHashing(args, loader):
             h_norm = func.normalize(h)
             S_h = h_norm.mm(h_norm.t()) # [-1, 1]
 
-            # T005  T008
-            # args.lamda1 = 0
             relation_recons_loss = criterion_l2(S_h, S_I_batch) * args.lamda1
 
             # (2) 量化loss
             sign_loss = criterion_l2(h, b) * args.lamda2
 
             #(3) 重构loss
-            # T006 T009
-            # args.lamda3 = 0
             semantic_recons_loss = criterion_l2(feat_reconst, img) * args.lamda3
 
             # total loss
