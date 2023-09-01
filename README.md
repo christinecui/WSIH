@@ -14,7 +14,7 @@ We integrate train step and test step in a bash file T001_main.sh, please run it
 
 If you find our approach useful in your research, please consider citing:
 
-@inproceedings{WISH2022,
+@inproceedings{WSIH2022,
 
   author       = {Hui Cui and Lei Zhu and Jingjing Li and Zheng Zhang and Weili Guan},
   
