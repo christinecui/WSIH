@@ -29,7 +29,7 @@ class CustomDataSet(Dataset):
         return count
 
 def get_loader(batch_size, db_name):
-    base_path = '/media/zl/9CCC203CCC2012D6/ch2018/707_WISH/datasets/'
+    base_path = './datasets/'
     path = base_path + db_name + '/mat/'
 
     # x: images  L:labels
@@ -70,7 +70,7 @@ def get_loader(batch_size, db_name):
     return dataloader
 
 def get_loader_web(batch_size, db_name, shuffle_mode = True):
-    path = '/media/zl/9CCC203CCC2012D6/ch2018/707_WISH/datasets/web/mat/'
+    path = './datasets/web/'
 
     # x: images  L:labels
     if db_name == 'coco':
